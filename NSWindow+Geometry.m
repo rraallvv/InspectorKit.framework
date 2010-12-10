@@ -15,15 +15,20 @@
 }
 
 - (NSRect) windowFrameForNewContentViewSize:(NSSize)newSize {
-	NSRect windowFrame = [self frame];
+    NSRect windowFrame = [self frame];
 	
-	windowFrame.size.width = newSize.width;
+    if ([self isKindOfClass:[NSPanel class]]) {
+        windowFrame.size.width = newSize.width;
 	
-	float titlebarAreaHeight = windowFrame.size.height - [[self contentView] frame].size.height;
-	float newHeight = newSize.height + titlebarAreaHeight;
-	float heightDifference = windowFrame.size.height - newHeight;
-	windowFrame.size.height = newHeight;
-	windowFrame.origin.y += heightDifference;
+        float titlebarAreaHeight = windowFrame.size.height - [[self contentView] frame].size.height;
+        float newHeight = newSize.height + titlebarAreaHeight;
+        float heightDifference = windowFrame.size.height - newHeight;
+        windowFrame.size.height = newHeight;
+        windowFrame.origin.y += heightDifference;
+        
+    } else {
+        windowFrame.size = newSize;
+    }
 	
 	return windowFrame;
 }

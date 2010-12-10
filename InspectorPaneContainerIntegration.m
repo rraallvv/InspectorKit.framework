@@ -156,12 +156,12 @@
 - (void) setFrame:(NSRect)newFrame {
 	[super setFrame:newFrame];
 	
-	if ([self window])
+	if ([self window] && [[self window] isKindOfClass:[NSPanel class]])
 		[self performSelector:@selector(adjustIBWindowFrame) withObject:nil afterDelay:0.0];
 }
 
 - (void)viewDidMoveToWindow {
-	if ([self window])
+	if ([self window] && [[self window] isKindOfClass:[NSPanel class]])
 		[self performSelector:@selector(adjustIBWindowFrame) withObject:nil afterDelay:0.0];
 }
 

@@ -65,10 +65,13 @@
 	topMargin = NSHeight([[self superview] frame]) - NSMaxY([self frame]);
 	
 	if (SDIsInIB == NO) {
-		[self adjustActualWindowToFitContainer];
-		
-		[[self window] setShowsResizeIndicator:NO];
-		[[self window] setMovableByWindowBackground:YES];
+        
+        if ([[self window] isKindOfClass:[NSPanel class]]) {
+            [self adjustActualWindowToFitContainer];
+            
+            [[self window] setShowsResizeIndicator:NO];
+            [[self window] setMovableByWindowBackground:YES];            
+        }
 		
 		//[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(resetWindowSize:) name:NSApplicationWillTerminateNotification object:NSApp];
 		
@@ -141,10 +144,19 @@
 	newMainFrame.size.height = top;
 	[self setFrame:newMainFrame];
 	
-	NSSize contentViewSize = newMainFrame.size;
-	contentViewSize.height += topMargin;
-	NSRect newWindowFrame = [[self window] windowFrameForNewContentViewSize:contentViewSize];
-	[[self window] setFrame:newWindowFrame display:YES];
+    if ([[self window] isKindOfClass:[NSPanel class]]) {
+        NSSize contentViewSize = newMainFrame.size;
+        contentViewSize.height += topMargin;
+        NSRect newWindowFrame = [[self window] windowFrameForNewContentViewSize:contentViewSize];
+        [[self window] setFrame:newWindowFrame display:YES];
+    } else {
+        NSSize contentViewSize = newMainFrame.size;
+        contentViewSize.height += topMargin;
+        
+        NSRect superViewFrame = [[self superview] frame];
+        superViewFrame.size = contentViewSize;
+        [[self superview] setFrame:superViewFrame];
+    }
 }
 
 @end
