@@ -1,6 +1,7 @@
-## Info about Fork:
+## Info about this Fork:
 
 This fork exists for two reasons:
+
 1. make this framework usable for iVocabulary (Mac) where it's included in the main window (instead of in a NSPanel)
 2. add Cocotron compatibility and a Cocotron target to compile it for Windows (and other Cocotron supported targets)
 
