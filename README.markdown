@@ -1,4 +1,10 @@
-Created by Steven Degutis - [www.degutis.org](http://www.degutis.org)
+## Info about Fork:
+
+This fork exists for two reasons:
+1. make this framework usable for iVocabulary (Mac) where it's included in the main window (instead of in a NSPanel)
+2. add Cocotron compatibility and a Cocotron target to compile it for Windows (and other Cocotron supported targets)
+
+Original created by Steven Degutis - [www.degutis.org](http://www.degutis.org)
 
 ## How To Use
 
