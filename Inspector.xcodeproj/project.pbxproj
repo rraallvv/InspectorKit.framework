@@ -27,6 +27,20 @@
 		54D33B2906778E3300C9C163 /* InspectorPaneView.classdescription in Resources */ = {isa = PBXBuildFile; fileRef = 54D33B2806778E3300C9C163 /* InspectorPaneView.classdescription */; };
 		8D1AC96C0486D14A00FE50C9 /* InspectorPaneInspector.m in Sources */ = {isa = PBXBuildFile; fileRef = 0259C577FE90428111CA0C5A /* InspectorPaneInspector.m */; settings = {ATTRIBUTES = (); }; };
 		8D1AC9700486D14A00FE50C9 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD92D38A0106425D02CA0E72 /* Cocoa.framework */; };
+		AAE32D4112B0E6A900956B4B /* InspectorPane.h in Headers */ = {isa = PBXBuildFile; fileRef = C059ACDB0A49E0A20079D97B /* InspectorPane.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AAE32D4212B0E6A900956B4B /* InspectorPaneHead.h in Headers */ = {isa = PBXBuildFile; fileRef = B009DAFF0F632D31001D05F2 /* InspectorPaneHead.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AAE32D4312B0E6A900956B4B /* InspectorPaneBody.h in Headers */ = {isa = PBXBuildFile; fileRef = B009DB030F632D41001D05F2 /* InspectorPaneBody.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AAE32D4412B0E6A900956B4B /* InspectorPaneContainer.h in Headers */ = {isa = PBXBuildFile; fileRef = B0D9D6A10F64133900AFB9DC /* InspectorPaneContainer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AAE32D4512B0E6A900956B4B /* NSBezierPath+StrokeExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = B0DDDC050F64CE8B00BC1B93 /* NSBezierPath+StrokeExtensions.h */; };
+		AAE32D4812B0E6A900956B4B /* NSWindow+Geometry.m in Sources */ = {isa = PBXBuildFile; fileRef = B04BCF290F8B8B6A00EEAF04 /* NSWindow+Geometry.m */; };
+		AAE32D4912B0E6A900956B4B /* InspectorPane.m in Sources */ = {isa = PBXBuildFile; fileRef = C059ACDC0A49E0A20079D97B /* InspectorPane.m */; };
+		AAE32D4A12B0E6A900956B4B /* InspectorPaneHead.m in Sources */ = {isa = PBXBuildFile; fileRef = B009DB000F632D31001D05F2 /* InspectorPaneHead.m */; };
+		AAE32D4B12B0E6A900956B4B /* InspectorPaneBody.m in Sources */ = {isa = PBXBuildFile; fileRef = B009DB040F632D41001D05F2 /* InspectorPaneBody.m */; };
+		AAE32D4C12B0E6A900956B4B /* InspectorPaneContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = B0D9D6A20F64133900AFB9DC /* InspectorPaneContainer.m */; };
+		AAE32D4D12B0E6A900956B4B /* NSBezierPath+StrokeExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = B0DDDC060F64CE8B00BC1B93 /* NSBezierPath+StrokeExtensions.m */; };
+		AAE32D4F12B0E6A900956B4B /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD92D38A0106425D02CA0E72 /* Cocoa.framework */; };
+		AAE330AF12B0EA0100956B4B /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13F8B88807B434F6008AE28D /* AppKit.framework */; };
+		AAE330B012B0EA0200956B4B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13F8B88A07B434F6008AE28D /* Foundation.framework */; };
 		B009DAF90F632B95001D05F2 /* InspectorKitLibrary.xib in Resources */ = {isa = PBXBuildFile; fileRef = B009DAF80F632B95001D05F2 /* InspectorKitLibrary.xib */; };
 		B009DB010F632D31001D05F2 /* InspectorPaneHead.h in Headers */ = {isa = PBXBuildFile; fileRef = B009DAFF0F632D31001D05F2 /* InspectorPaneHead.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B009DB020F632D31001D05F2 /* InspectorPaneHead.m in Sources */ = {isa = PBXBuildFile; fileRef = B009DB000F632D31001D05F2 /* InspectorPaneHead.m */; };
@@ -106,6 +120,7 @@
 		54D33B2806778E3300C9C163 /* InspectorPaneView.classdescription */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = InspectorPaneView.classdescription; sourceTree = "<group>"; };
 		8D1AC9730486D14A00FE50C9 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		8D1AC9740486D14A00FE50C9 /* InspectorKitPlugin.ibplugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InspectorKitPlugin.ibplugin; sourceTree = BUILT_PRODUCTS_DIR; };
+		AAE32D5412B0E6A900956B4B /* InspectorKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = InspectorKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B009DAF80F632B95001D05F2 /* InspectorKitLibrary.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InspectorKitLibrary.xib; sourceTree = "<group>"; };
 		B009DAFF0F632D31001D05F2 /* InspectorPaneHead.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InspectorPaneHead.h; sourceTree = "<group>"; };
 		B009DB000F632D31001D05F2 /* InspectorPaneHead.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InspectorPaneHead.m; sourceTree = "<group>"; };
@@ -152,6 +167,16 @@
 				8D1AC9700486D14A00FE50C9 /* Cocoa.framework in Frameworks */,
 				546DEAF3067F632A0098DCC4 /* InspectorKit.framework in Frameworks */,
 				C0D069560A49DF9100C95564 /* InterfaceBuilderKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AAE32D4E12B0E6A900956B4B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AAE330B012B0EA0200956B4B /* Foundation.framework in Frameworks */,
+				AAE330AF12B0EA0100956B4B /* AppKit.framework in Frameworks */,
+				AAE32D4F12B0E6A900956B4B /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -214,6 +239,7 @@
 			children = (
 				8D1AC9740486D14A00FE50C9 /* InspectorKitPlugin.ibplugin */,
 				53DF68FD067E5B5A0090B5B0 /* InspectorKit.framework */,
+				AAE32D5412B0E6A900956B4B /* InspectorKit.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -324,6 +350,18 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		AAE32D4012B0E6A900956B4B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AAE32D4112B0E6A900956B4B /* InspectorPane.h in Headers */,
+				AAE32D4212B0E6A900956B4B /* InspectorPaneHead.h in Headers */,
+				AAE32D4312B0E6A900956B4B /* InspectorPaneBody.h in Headers */,
+				AAE32D4412B0E6A900956B4B /* InspectorPaneContainer.h in Headers */,
+				AAE32D4512B0E6A900956B4B /* NSBezierPath+StrokeExtensions.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
@@ -365,6 +403,24 @@
 			productReference = 8D1AC9740486D14A00FE50C9 /* InspectorKitPlugin.ibplugin */;
 			productType = "com.apple.product-type.bundle";
 		};
+		AAE32D3F12B0E6A900956B4B /* InspectorKit-Windows */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AAE32D5112B0E6A900956B4B /* Build configuration list for PBXNativeTarget "InspectorKit-Windows" */;
+			buildPhases = (
+				AAE32D4012B0E6A900956B4B /* Headers */,
+				AAE32D4612B0E6A900956B4B /* Resources */,
+				AAE32D4712B0E6A900956B4B /* Sources */,
+				AAE32D4E12B0E6A900956B4B /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "InspectorKit-Windows";
+			productName = InspectorPaneFramework;
+			productReference = AAE32D5412B0E6A900956B4B /* InspectorKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -372,7 +428,14 @@
 			isa = PBXProject;
 			buildConfigurationList = C056398B08A954F8003078D8 /* Build configuration list for PBXProject "Inspector" */;
 			compatibilityVersion = "Xcode 3.1";
+			developmentRegion = English;
 			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
 			mainGroup = 0259C574FE90428111CA0C5A /* InspectorPane */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -380,6 +443,7 @@
 				53DF6901067E5B8E0090B5B0 /* All */,
 				8D1AC9600486D14A00FE50C9 /* InspectorPlugin */,
 				53DF68FC067E5B5A0090B5B0 /* InspectorKit */,
+				AAE32D3F12B0E6A900956B4B /* InspectorKit-Windows */,
 			);
 		};
 /* End PBXProject section */
@@ -403,6 +467,13 @@
 				B0D9D8220F64253200AFB9DC /* InspectorPaneContainerInspector.xib in Resources */,
 				B0DDDB7C0F6480F700BC1B93 /* InspectorContainer-icon.png in Resources */,
 				B0DDDB7D0F6480F700BC1B93 /* InspectorPane-icon.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AAE32D4612B0E6A900956B4B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -435,6 +506,19 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		AAE32D4712B0E6A900956B4B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AAE32D4812B0E6A900956B4B /* NSWindow+Geometry.m in Sources */,
+				AAE32D4912B0E6A900956B4B /* InspectorPane.m in Sources */,
+				AAE32D4A12B0E6A900956B4B /* InspectorPaneHead.m in Sources */,
+				AAE32D4B12B0E6A900956B4B /* InspectorPaneBody.m in Sources */,
+				AAE32D4C12B0E6A900956B4B /* InspectorPaneContainer.m in Sources */,
+				AAE32D4D12B0E6A900956B4B /* NSBezierPath+StrokeExtensions.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -456,6 +540,64 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		AAE32D5212B0E6A900956B4B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = i386;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				EXECUTABLE_FOLDER_PATH = "$(CONTENTS_FOLDER_PATH)/Windows";
+				EXECUTABLE_PREFIX = dll;
+				EXECUTABLE_SUFFIX = .dll;
+				FRAMEWORK_SEARCH_PATHS = /Developer/Cocotron/1.0/Windows/i386/Frameworks;
+				FRAMEWORK_VERSION = A;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_FAST_OBJC_DISPATCH = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_VERSION = org.cocotron.1.0.windows.i386.gcc.4.3.1;
+				INFOPLIST_FILE = "InspectorFramework-Info.plist";
+				INSTALL_PATH = "@loader_path/../Frameworks";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = (
+					"-Wl,--out-implib,$TARGET_BUILD_DIR/$(PRODUCT_NAME).framework/lib$(PRODUCT_NAME).a",
+					"-Wl,--export-all-symbols",
+					"-Wl,--enable-auto-import",
+					"-shared",
+				);
+				PRODUCT_NAME = InspectorKit;
+				SDKROOT = cocotron32;
+				SKIP_INSTALL = NO;
+				VALID_ARCHS = i386;
+			};
+			name = Debug;
+		};
+		AAE32D5312B0E6A900956B4B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = i386;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(DEVELOPER_DIR)/Cocotron/1.0/Windows/i386/Frameworks\"",
+				);
+				FRAMEWORK_VERSION = A;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_VERSION = org.cocotron.1.0.windows.i386.gcc.4.3.1;
+				INFOPLIST_FILE = "InspectorFramework-Info.plist";
+				INSTALL_MODE_FLAG = "go-w,a+rX";
+				INSTALL_PATH = "@loader_path/../Frameworks";
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_NAME = InspectorKit;
+				SDKROOT = cocotron32;
+				SKIP_INSTALL = NO;
+				VALID_ARCHS = i386;
+			};
+			name = Release;
+		};
 		C056398008A954F8003078D8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -497,6 +639,7 @@
 		C056398408A954F8003078D8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				COPY_PHASE_STRIP = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					$inherited,
@@ -511,6 +654,7 @@
 				GCC_PREFIX_HEADER = InspectorPlugin_Prefix.pch;
 				INFOPLIST_FILE = Info.plist;
 				PRODUCT_NAME = InspectorKitPlugin;
+				SDKROOT = macosx10.5;
 				WRAPPER_EXTENSION = ibplugin;
 			};
 			name = Debug;
@@ -518,6 +662,7 @@
 		C056398508A954F8003078D8 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -530,6 +675,7 @@
 				GCC_PREFIX_HEADER = InspectorPlugin_Prefix.pch;
 				INFOPLIST_FILE = Info.plist;
 				PRODUCT_NAME = InspectorKitPlugin;
+				SDKROOT = macosx10.5;
 				WRAPPER_EXTENSION = ibplugin;
 			};
 			name = Release;
@@ -568,12 +714,12 @@
 		C056398C08A954F8003078D8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_MODEL_TUNING = "";
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				ONLY_ACTIVE_ARCH = YES;
+				ONLY_ACTIVE_ARCH = NO;
 				PREBINDING = NO;
 				SDKROOT = macosx10.5;
 			};
@@ -582,7 +728,7 @@
 		C056398D08A954F8003078D8 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_MODEL_TUNING = "";
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
@@ -595,6 +741,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		AAE32D5112B0E6A900956B4B /* Build configuration list for PBXNativeTarget "InspectorKit-Windows" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AAE32D5212B0E6A900956B4B /* Debug */,
+				AAE32D5312B0E6A900956B4B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		C056397F08A954F8003078D8 /* Build configuration list for PBXNativeTarget "InspectorKit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
