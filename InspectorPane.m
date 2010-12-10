@@ -27,6 +27,23 @@
 @synthesize minHeight;
 @synthesize maxHeight;
 
+#pragma mark Class
+
++ (void)initialize {
+    [self exposeBinding:@"title"];
+}
+
+- (Class)valueClassForBinding:(NSString *)binding {
+    if ([binding isEqualToString:@"title"]) {
+        return [NSString class];
+    } else {
+        return [super valueClassForBinding:binding];
+    }
+}
+
+
+#pragma mark Init
+
 - (id) initWithFrame:(NSRect)frame {
 	if (self = [super initWithFrame:frame]) {
 	}
@@ -274,6 +291,15 @@
 	newFrame.origin.y += amount;
 	
 	[self setFrame:newFrame];
+}
+
+#pragma mark Accessors
+
+- (void) setTitle:(NSString*)title {
+    [titleTextField setStringValue:title];
+}
+- (NSString*) title {
+    return [titleTextField stringValue];
 }
 
 @end
