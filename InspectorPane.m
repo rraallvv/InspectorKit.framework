@@ -296,7 +296,7 @@
 #pragma mark Accessors
 
 - (void) setTitle:(NSString*)title {
-    [titleTextField setStringValue:title];
+    [titleTextField setStringValue:(title ? title : @"")];
 }
 - (NSString*) title {
     return [titleTextField stringValue];
