@@ -155,7 +155,9 @@
         
         NSRect superViewFrame = [[self superview] frame];
         superViewFrame.size = contentViewSize;
+        [[self superview] setPostsFrameChangedNotifications:NO];
         [[self superview] setFrame:superViewFrame];
+        [[self superview] setPostsFrameChangedNotifications:YES];
     }
 }
 
