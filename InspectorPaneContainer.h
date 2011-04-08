@@ -14,6 +14,8 @@
 	NSString *autosaveName;
 	
 	float topMargin;
+    
+    BOOL inSetFrame;
 }
 
 @property (retain) NSString *autosaveName;

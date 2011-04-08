@@ -62,8 +62,6 @@
 }
 
 - (void) awakeFromNib {
-	topMargin = NSHeight([[self superview] frame]) - NSMaxY([self frame]);
-	
 	if (SDIsInIB == NO) {
         
         if ([[self window] isKindOfClass:[NSPanel class]]) {
@@ -87,8 +85,29 @@
 													   object:subview];
 		}
 		
-		[self repositionViewsIgnoringView:nil];
+        if ([self superview]) {
+            [self repositionViewsIgnoringView:nil];
+        }
 	}
+}
+
+- (void) viewDidMoveToSuperview {
+    [super viewDidMoveToSuperview];
+    
+    if (![[self superview] isFlipped]) {
+        topMargin = NSHeight([[self superview] frame]) - NSMaxY([self frame]);
+    } else {
+        topMargin = 0.0;
+    }
+    
+    
+    [self repositionViewsIgnoringView:nil];
+}
+
+- (void) setFrame:(NSRect)newFrame {
+    inSetFrame = YES;
+    
+    [super setFrame:newFrame];
 }
 
 - (void) adjustSubviewFrames:(NSNotification*)notification {
@@ -149,15 +168,17 @@
         contentViewSize.height += topMargin;
         NSRect newWindowFrame = [[self window] windowFrameForNewContentViewSize:contentViewSize];
         [[self window] setFrame:newWindowFrame display:YES];
-    } else {
+        
+    } else if (!inSetFrame) {
         NSSize contentViewSize = newMainFrame.size;
         contentViewSize.height += topMargin;
         
         NSRect superViewFrame = [[self superview] frame];
         superViewFrame.size = contentViewSize;
-        [[self superview] setPostsFrameChangedNotifications:NO];
-        [[self superview] setFrame:superViewFrame];
-        [[self superview] setPostsFrameChangedNotifications:YES];
+        
+        [contentView setFrame:superViewFrame];
+        
+        inSetFrame = NO;
     }
 }
 

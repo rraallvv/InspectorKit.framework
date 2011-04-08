@@ -654,7 +654,7 @@
 				GCC_PREFIX_HEADER = InspectorPlugin_Prefix.pch;
 				INFOPLIST_FILE = Info.plist;
 				PRODUCT_NAME = InspectorKitPlugin;
-				SDKROOT = macosx10.5;
+				SDKROOT = macosx;
 				WRAPPER_EXTENSION = ibplugin;
 			};
 			name = Debug;
@@ -675,7 +675,7 @@
 				GCC_PREFIX_HEADER = InspectorPlugin_Prefix.pch;
 				INFOPLIST_FILE = Info.plist;
 				PRODUCT_NAME = InspectorKitPlugin;
-				SDKROOT = macosx10.5;
+				SDKROOT = macosx;
 				WRAPPER_EXTENSION = ibplugin;
 			};
 			name = Release;
@@ -721,7 +721,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				ONLY_ACTIVE_ARCH = NO;
 				PREBINDING = NO;
-				SDKROOT = macosx10.5;
+				SDKROOT = macosx;
 			};
 			name = Debug;
 		};
@@ -734,7 +734,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				PREBINDING = NO;
-				SDKROOT = macosx10.5;
+				SDKROOT = macosx;
 			};
 			name = Release;
 		};
