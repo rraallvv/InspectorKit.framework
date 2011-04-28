@@ -633,6 +633,7 @@
 				INSTALL_PATH = "@loader_path/../Frameworks";
 				PRODUCT_NAME = InspectorKit;
 				SKIP_INSTALL = NO;
+				VALID_ARCHS = "i386 x86_64";
 			};
 			name = Release;
 		};
